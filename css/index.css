@@ -1,0 +1,702 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: white;
+}
+
+header, main, footer {
+    display: block;
+    width:100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* TOPPAGE */
+
+body {
+    background-image: url("../images/background-image.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#header {
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+
+.navigation ul {
+    display: block;
+    text-align: right;
+    margin-right: 50px;
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    position: fixed;
+}
+
+ .sp_nav {
+     display: none;
+ }
+
+header ul li{
+    width: 100px;
+    height: 25px;
+    display: block;
+    float: left;
+    background-color: #e5e5e5;
+    margin: 0 5px;
+}
+
+header ul li a { 
+    display: block;
+    font-size: 14px;
+    color: #747474;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 7px;
+    
+}
+
+.last-list {
+    margin: 0 0 0 auto;
+    padding: 0 0 0 10px;
+}
+
+header .navigation {
+    clear: both;
+    margin: 0px;
+}
+
+.site-image {
+    display: block;
+    width: 350px;
+    transform: rotate(25deg);
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 370px;
+}
+
+header .site-name {
+    font-size: 45px;
+    letter-spacing: 0.5rem;
+    float: right;
+    margin-top: 430px;
+    margin-right: 100px;
+    padding-bottom: 300px;
+    color: #636363;
+}
+
+
+
+/* PROFILE */
+
+#profile {
+    display: block;
+    margin: 20px;
+    margin-top: 0px;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+#profile h2 {
+   font-size: 40px; 
+   color: #656565;
+   letter-spacing: 0.5rem;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+#profile .text {
+    margin-top: 100px;
+}
+
+#profile p {
+    width: 900px;
+    margin: 0 auto 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.2rem;
+    color: #656565;
+}
+
+
+
+/* WORKS */
+
+#works {
+    width: 100%;
+    display: block;
+    margin: 0 auto 0;
+    margin-bottom: 250px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#works h2 {
+   font-size: 40px; 
+   color: #656565;
+   letter-spacing: 0.5rem;
+   text-align: center;
+}
+
+#works .works_main {
+    width: 900px;
+    margin: 0 auto 0;
+    margin-top: 100px;
+}
+
+#works h4 {
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+}
+
+#works .webarea {
+    display: block;
+    width: 400px;
+    height: 380px;
+    background-color: #ebf4f5;
+    margin: 0px auto 0px;
+    margin-bottom: 200px;
+    float: left;
+    
+}
+
+#works .webarea .web {
+    font-size: 25px;
+    color: #656565;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    content: "";
+    clear: both;
+    text-align: left;
+}
+
+#works .webarea .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+    margin-top: 25px;
+}
+
+#works .sozaiarea {
+    display: block;
+    width: 400px;
+    height: 380px;
+    background-color: #ebf4f5;
+    margin: 0px auto 0px;
+    margin-bottom: 200px;
+    float: right;
+    
+}
+
+#works .sozaiarea .sozai {
+    font-family: 明朝;
+    font-size: 25px;
+    color: #656565;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+    content: "";
+    clear: both;
+    text-align: left;
+}
+
+#works .sozaiarea .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+    margin-top: 25px;
+}
+
+#works .work_content {
+    width: 170px;
+    margin-left: 17px;
+    float: left;
+}
+
+#works .work_content img {
+    width: 170px;
+    
+}
+
+#works a {
+    width: 100%;
+}
+
+
+
+/*CONTACT */
+
+#contact {
+    display: block;
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto 0;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    clear: both;
+}
+
+#contact h2 {
+   font-size: 40px; 
+   color: #656565;
+   letter-spacing: 0.5rem;
+   text-align: center;
+}
+
+#contact .flexbox {
+    width: 95%;
+    margin: 0 auto 0;
+    margin-top: 70px;
+}
+
+form label {
+    width: 180px;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1.5px solid;
+    border-radius: 8px;
+    border-color: none;
+    color: white;
+    background-color: #c0c0c0;
+}
+
+form label p {
+    text-align: center;
+    padding: 5px;
+}
+
+form textarea, form input[type=text], form input[type=email] {
+    background: white;
+    border: 1.5px solid;
+    border-color: #7f7f7f;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+input[type="text"]:focus,
+texture:focus {
+    box-shadow: 0 0 7px #3498db;
+    border-color: #7f7f7f;
+}
+
+textarea:focus,
+texture:focus {
+    box-shadow: 0 0 7px #3498db;
+    border: 1px solid #3498db;
+}
+
+form .flexbox {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+
+.name_adress {
+    margin: 0px 70px auto 90px;
+}
+
+.massage {
+    margin-left: 50px;
+}
+
+
+
+.send-btn input {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #82b9c3;
+    margin: 0 auto 0;
+    margin-top: 15px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+    transition: .3s;
+}
+
+.send-btn input: hover {
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+
+
+/*footer */
+footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+/* ===================================レスポンシブ=================================== */
+@media (max-width: 550px){ 
+    
+header, main {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.navigation ul {
+    display: none;
+    margin-right: 30px;
+    margin-top: -5px;
+}
+
+.sp_nav {
+    display: block;
+    
+}
+
+header ul li {
+    width: 65px;
+    height: 25px;
+    display: block;
+    float: left;
+    background-color: #e5e5e5;
+    margin: 0 3px;
+}
+
+header ul li a {
+    display: block;
+    font-size: 12px;
+    color: #747474;
+    text-decoration: none;
+    text-align: center;
+}
+
+#ham-menu {
+     display: block;
+     width: 50px;
+     margin-right: 15px;
+     margin-top: 10px;
+     float:right;
+ }
+
+body {
+    background-image: url("../images/background-image.png");
+    background-size: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.site-image {
+    display: block;
+    width: 90px;
+    transform: rotate(25deg);
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 70px;
+}
+
+header .site-name {
+    font-size: 19px;
+    letter-spacing: 0.1rem;
+    float: right;
+    margin-top: 90px;
+    margin-right: 10px;
+    padding-bottom: 80px;
+    color: #636363;
+}
+
+
+
+
+/* PROFILE */
+
+
+#profile {
+    display: block;
+    margin: 20px;
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+#profile h2 {
+   font-size: 30px; 
+   color: #656565;
+   letter-spacing: 0.2rem;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+#profile .text {
+    margin-top: 50px;
+}
+
+#profile p {
+    width: 250px;
+    margin: 0 auto 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
+    color: #656565;
+}
+
+
+
+
+/* WORKS */
+
+#works {
+    width: 100%;
+    display: block;
+    margin: 0 auto 0;
+    padding: 0px;
+    margin-bottom: 250px;
+}
+
+#works h2 {
+   font-size: 30px; 
+   color: #656565;
+   letter-spacing: 0.2rem;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+#works .works_main {
+    width: 360px;
+    margin: 0 auto 0;
+    margin-top: 40px;
+}
+
+#works h4 {
+    width: 100%;
+    margin-top: 7px;
+    text-align: center;
+}
+
+#works .webarea {
+    display: block;
+    width: 360px;
+    height: 380px;
+    background-color: transparent;
+    margin: 0px auto 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+#works .webarea .web {
+    font-size: 23px;
+    color: #656565;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#works .webarea .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+    margin-top: 25px;
+}
+
+#works .sozaiarea {
+    display: block;
+    width: 360px;
+    height: 380px;
+    background-color: transparent;
+    margin: 0px auto 0px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#works .sozaiarea .sozai {
+    font-family: 明朝;
+    color: #656565;
+    width: 100%;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+#works .sozaiarea .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0;
+    margin-top: 25px;
+    clear: both;
+}
+
+#works .work_content {
+    width: 150px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#works .work_content img {
+    width: 150px;
+    
+}
+
+#works a {
+    width: 100%;
+}
+
+
+
+
+/*CONTACT */
+
+#contact {
+    display: block;
+    width: 360px;
+    height: auto;
+    margin: 0 auto 0;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    clear: both;
+}
+
+#contact h2 {
+   font-size: 30px; 
+   color: #656565;
+   letter-spacing: 0.2rem;
+   text-align: center;
+   margin-top: 50px;
+}
+
+#contact .flexbox {
+    width: 360px;
+    margin: 0 auto 0;
+    margin-top: 50px;
+}
+
+form label {
+    width: 150px;
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1.5px solid;
+    border-radius: 8px;
+    border-color: none;
+    color: white;
+    background-color: #c0c0c0;
+}
+
+label[for="name"] {
+    width: 50px;
+}
+
+label[for="email"] {
+    width: 140px;
+}
+
+label[for="message"] {
+    width: 100px;
+}
+
+form label p {
+    text-align: left;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+form textarea, form input[type=text], form input[type=email] {
+    background: white;
+    border: 1.5px solid;
+    border-color: #7f7f7f;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    height: 95px;
+}
+
+input[type="text"]:focus,
+texture:focus {
+    box-shadow: 0 0 7px #3498db;
+    border-color: #7f7f7f;
+}
+
+textarea:focus,
+texture:focus {
+    box-shadow: 0 0 7px #3498db;
+    border: 1px solid #3498db;
+}
+
+form .flexbox {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+
+.name_adress {
+    margin: 0px 80px auto 80px;
+}
+
+.massage {
+    margin: 0px 80px auto 80px;
+}
+
+.massage {
+    margin: 0px 80px auto 80px;
+}
+
+/*footer */
+footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact form {
+    display: block;
+    content: "";
+} 
+
+
+
+}
+    
+    
+    
+    
